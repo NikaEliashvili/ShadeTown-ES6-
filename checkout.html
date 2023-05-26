@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="icon" href="main logo.jpg" />
+    <title>Shadetown: custom sunnies</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="checkoutPage">
+    <header class="header">
+      <img src="./images/logo.png" alt="Shadetown" class="logo" />
+      <p class="byline">home of custom eyewear</p>
+    </header>
+    <main>
+      <form action="" class="checkout-form">
+        <label for="input-email">Email</label>
+        <input id="input-email" type="email" required />
+        <label for="input-name">name</label>
+        <input id="input-name" type="name" required />
+        <label for="input-numb">Card Number</label>
+        <input id="input-numb" type="number" required />
+        <div class="expdate-cvc">
+          <div class="expdata">
+            <label for="input-date">Expiration date (MM/YY)</label>
+            <input id="input-date" type="number" required />
+          </div>
+          <div class="cvc">
+            <label for="input-cvc">cvc</label>
+            <input id="input-cvc" type="number" required />
+          </div>
+        </div>
+        <button class="pay-btn">Pay</button>
+        <a href="index.html" class="goback">Go Back</a>
+      </form>
+    </main>
+    <div class="payed">
+      <p>Thank you for your purchase</p>
+      <img src="confirmed.svg" alt="confirmed" />
+    </div>
+    <script src="checkout.js"></script>
+  </body>
+</html>
